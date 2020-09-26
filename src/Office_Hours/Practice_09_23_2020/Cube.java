@@ -1,10 +1,10 @@
 package Office_Hours.Practice_09_23_2020;
 
 public class Cube extends Shape implements Volume {
-        //area, perimeter, volume
+        //area, perimeter, volume  - instances from parent class
     public double side;
 
-    public Cube(double side){
+    public Cube(double side){  // this is a constructor
         if(side <= 0 ){
             throw new RuntimeException("Cube side can't be negative or 0");
         }
